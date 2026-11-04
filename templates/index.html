@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2 class="title">Python Calculator</h2>
+
+<div class="calculator">
+
+    <form method="POST">
+
+        <input class="display" name="display" value="{{ display }}" readonly>
+
+        <div class="keys">
+
+            <button class="btn gray" name="btn" value="AC">AC</button>
+            <button class="btn gray" name="btn" value="%">%</button>
+            <button class="btn gray" name="btn" value="BACK">⌫</button>
+            <button class="btn gray" name="btn" value="/">÷</button>
+
+            <button class="btn" name="btn" value="7">7</button>
+            <button class="btn" name="btn" value="8">8</button>
+            <button class="btn" name="btn" value="9">9</button>
+            <button class="btn" name="btn" value="*">×</button>
+
+            <button class="btn" name="btn" value="4">4</button>
+            <button class="btn" name="btn" value="5">5</button>
+            <button class="btn" name="btn" value="6">6</button>
+            <button class="btn" name="btn" value="-">−</button>
+
+            <button class="btn" name="btn" value="1">1</button>
+            <button class="btn" name="btn" value="2">2</button>
+            <button class="btn" name="btn" value="3">3</button>
+            <button class="btn" name="btn" value="+">+</button>
+
+            <button class="btn" name="btn" value="00">00</button>
+            <button class="btn" name="btn" value="0">0</button>
+            <button class="btn" name="btn" value=".">.</button>
+             <button class="btn orange" name="btn" value="=">=</button>
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
